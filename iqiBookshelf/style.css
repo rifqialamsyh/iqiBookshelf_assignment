@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.17s;
+}
+
+body,
+input,
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+.head_bar {
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.imgHeadBar {
+  margin: 10px;
+  width: 200px;
+  z-index: 1;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.search_section {
+  align-items: center;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search_section > form {
+  min-width: 500px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 10px;
+}
+
+.search_section > form > input {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.search_section > form > button {
+  background-color: white;
+  color: black;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#searchBookTitle {
+  border: 1px solid black;
+}
+
+#searchSubmit:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input_section > h2 {
+  text-align: center;
+  color: black;
+}
+
+.input_section > form > .input {
+  margin: 8px 0;
+}
+
+.input_section > form > button {
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input_section > form > button > span {
+  font-weight: bold;
+}
+
+.input_section > form > .input > input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.input_section > form > .input > label {
+  color: black;
+  font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+  color: black;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#inputBookTitle {
+  border: 1px solid rgb(192, 192, 192);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#inputBookAuthor {
+  border: 1px solid rgb(192, 192, 192);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#inputBookYear {
+  border: 1px solid rgb(192, 192, 192);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+::placeholder {
+  padding-left: 5px;
+  color: rgb(187, 187, 187);
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.book_shelf {
+  margin: 25px 0 0 0;
+  padding: 16px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book_shelf > h2 {
+  text-align: center;
+  color: black;
+}
+
+.book_shelf > .book_list {
+  padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+  padding: 8px 16px 16px 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+  margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+  background-color: darkgreen;
+  color: white;
+  padding: 5px 10px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+  background-color: rgb(1, 139, 1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+  background-color: darkred;
+  color: white;
+  padding: 5px 10px;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+  background-color: rgb(197, 4, 4);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+footer {
+  margin-top: 15px;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-weight: 100;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+#bookSubmit {
+  border: 1px solid black;
+}
+
+#bookSubmit:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
